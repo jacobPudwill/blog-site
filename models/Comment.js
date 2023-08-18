@@ -3,4 +3,33 @@ const sequelize = require('sequelize');
 
 class Comment extends Model {}
 
+Comment.init(
+    {
+        content: {
+            type: DataTypes.TEXT,
+            allowNull: false
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                id: 'id'
+            }
+        },
+        post_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'post',
+                key: 'id'
+            }
+        }
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'comment'
+    }
+);
+
 module.exports = Comment;
