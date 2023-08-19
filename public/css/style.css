@@ -53,3 +53,20 @@ header nav *:hover {
 #login-btn, #signup-btn {
     width: 100%;
 }
+
+/* Homepage */
+.post {
+    border: 0.25rem solid var(--brown);
+    border-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.post-title {
+    background-color: var(--brown);
+    color: var(--mint);
+    padding: 0.25rem;
+}
+
+.post-content {
+    padding: 0.5rem;
+}
