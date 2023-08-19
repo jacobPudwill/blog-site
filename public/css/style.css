@@ -1,4 +1,30 @@
 :root {
     --brown: #231010;
     --white: #D9EAD3;
+    --grey: #A7A7A7;
+}
+
+body {
+    background-color: var(--white);
+}
+
+/* Header */
+header {
+    background-color: var(--brown);
+}
+
+header nav * {
+    color: var(--white);
+    margin: 0 1rem;
+}
+
+header h1 {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 var(--grey);
+    padding: 0.25rem 1rem;
+}
+
+header h1 a {
+    color: var(--brown);
 }
