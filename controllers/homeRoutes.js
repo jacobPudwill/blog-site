@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', (req, res) => {
     res.render('homepage', {
+        layout: 'alt',
         logged_in: req.session.logged_in
     });
 });

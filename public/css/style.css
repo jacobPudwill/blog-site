@@ -1,11 +1,12 @@
 :root {
     --brown: #231010;
-    --white: #D9EAD3;
+    --mint: #D9EAD3;
     --grey: #A7A7A7;
+    --white: #ffffff;
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--mint);
 }
 
 /* Header */
@@ -13,15 +14,8 @@ header {
     background-color: var(--brown);
 }
 
-header nav * {
-    background-color: transparent;
-    border: none;
-    color: var(--white);
-    margin: 0 1rem;
-}
-
 header h1 {
-    background-color: var(--white);
+    background-color: var(--mint);
     border-radius: 5px;
     box-shadow: 5px 5px 0 var(--grey);
     padding: 0.25rem 1rem;
@@ -31,10 +25,22 @@ header h1 a {
     color: var(--brown);
 }
 
+header nav * {
+    background-color: transparent;
+    border: none;
+    color: var(--mint);
+    margin: 0 1rem;
+}
+
+header nav *:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
 /* Login/Signup */
 #login-title, #signup-title {
     background-color: var(--brown);
-    color: var(--white);
+    color: var(--mint);
     padding: 0.25rem 1rem;
 }
 
