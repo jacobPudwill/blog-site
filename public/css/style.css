@@ -70,3 +70,11 @@ header nav *:hover {
 .post-content {
     padding: 0.5rem;
 }
+
+/* Dashboard */
+.dashboard-post {
+    background-color: var(--grey);
+    color: var(--white);
+    width: 100%;
+    margin-bottom: 0.5rem;
+}

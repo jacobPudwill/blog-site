@@ -1,0 +1,12 @@
+<div>
+    {{#each posts as |post|}}
+    <button class="btn display-flex justify-space-between align-center dashboard-post">
+        <h5>
+            {{title}}
+        </h5>
+        <h5>
+            {{format_date createdAt}}
+        </h5>
+    </button>
+    {{/each}}
+</div>
