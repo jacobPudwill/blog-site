@@ -11,8 +11,6 @@ const newPostFormHandler = async (event) => {
             headers: { 'Content-Type': 'application/json' }
         });
 
-        console.log('Data: ', response);
-
         if (response.ok) {
             document.location.replace('/dashboard');
         } else {
