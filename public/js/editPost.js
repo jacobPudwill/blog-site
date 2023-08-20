@@ -1,13 +1,3 @@
-const setPostData = async () => {
-    const title = document.querySelector('#edit-post-title').getAttribute('data-title');
-    const content = document.querySelector('edit-post-content').getAttribute('data-content');
-
-    console.log(title, content);
-
-    document.querySelector('#edit-post-title').setAttribute('value', title);
-    document.querySelector('#edit-post-content').setAttribute('value', content);
-};
-
 const editPostFormHandler = async (event) => {
     event.preventDefault();
 
@@ -48,8 +38,6 @@ const delButtonHandler = async (event) => {
         }
     }
 }
-
-// setPostData();
 
 document
     .querySelector('.edit-post-form')
