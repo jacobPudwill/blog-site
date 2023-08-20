@@ -40,6 +40,13 @@ router.get('/dashboard', withAuth, async (req, res) => {
     });
 });
 
+router.get('/dashboard/new-post', withAuth, async (req,res) => {
+    res.render('newPost', {
+        layout: 'alt',
+        logged_in: req.session.logged_in
+    });
+});
+
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');

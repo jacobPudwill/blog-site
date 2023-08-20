@@ -37,20 +37,20 @@ header nav *:hover {
     text-decoration: none;
 }
 
-/* Login/Signup */
-#login-title, #signup-title {
+/* Login/Signup/Create Post */
+#login-title, #signup-title, #create-post-title {
     background-color: var(--brown);
     color: var(--mint);
     padding: 0.25rem 1rem;
 }
 
-#login, #signup {
+#login, #signup, #new-post {
     border: 0.25rem solid var(--brown);
     border-top: 0;
     padding: 0.5rem;
 }
 
-#login-btn, #signup-btn {
+#login-btn, #signup-btn, #create-btn {
     width: 100%;
 }
 
@@ -77,4 +77,22 @@ header nav *:hover {
     color: var(--white);
     width: 100%;
     margin-bottom: 0.5rem;
+}
+
+#new-post-btn {
+    background-color: var(--brown);
+    color: var(--mint);
+
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+#new-post-btn:hover {
+    color: var(--white);
+    text-decoration: none;
 }
