@@ -40,9 +40,26 @@ router.get('/dashboard', withAuth, async (req, res) => {
     });
 });
 
-router.get('/dashboard/new-post', withAuth, async (req,res) => {
+router.get('/dashboard/new-post', withAuth, async (req, res) => {
     res.render('newPost', {
         layout: 'alt',
+        logged_in: req.session.logged_in
+    });
+});
+
+router.get('/dashboard/edit-post/:id', withAuth, async (req, res) => {
+    const postData = await Post.findOne({
+        where: {
+            id: req.params.id,
+            user_id: req.session.user_id
+        }
+    });
+
+    const post = postData.get({ plain: true });
+
+    res.render('editPost', {
+        layout: 'alt',
+        post,
         logged_in: req.session.logged_in
     });
 });

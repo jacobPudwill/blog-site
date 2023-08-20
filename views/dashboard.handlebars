@@ -1,14 +1,12 @@
-<div>
-    {{#each posts as |post|}}
-    <button class="btn display-flex justify-space-between align-center dashboard-post">
-        <h5>
-            {{title}}
-        </h5>
-        <h5>
-            {{format_date createdAt}}
-        </h5>
-    </button>
-    {{/each}}
+{{#each posts as |post|}}
+<div class="display-flex justify-space-between align-center dashboard-post">
+    <h5>
+        <a href="/dashboard/edit-post/{{id}}">{{title}}</a>
+    </h5>
+    <h5>
+        {{format_date createdAt}}
+    </h5>
 </div>
+{{/each}}
 
 <a href="/dashboard/new-post" id="new-post-btn">+ New Post</a>
