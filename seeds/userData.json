@@ -1,14 +1,28 @@
 [
-    {
-        "username": "Xandromus",
-        "password": "password12345"
-    },
-    {
-        "username": "Lernantino",
-        "password": "password12345"
-    },
-    {
-        "username": "Amiko",
-        "password": "password12345"
-    }
+    { "username": "john_doe", "password": "password" },
+    { "username": "jane_smith", "password": "Secure123" },
+    { "username": "alex_jackson", "password": "MySecretPa$$" },
+    { "username": "sarah_wilson", "password": "Passw0rd!" },
+    { "username": "michael_brown", "password": "BrownBear123" },
+    { "username": "emily_clark", "password": "Sunshine22" },
+    { "username": "david_miller", "password": "Qwerty567" },
+    { "username": "olivia_wilson", "password": "C0ffeeLover" },
+    { "username": "james_anderson", "password": "Anderson@789" },
+    { "username": "sophia_thomas", "password": "Thomas2023" },
+    { "username": "william_harris", "password": "HarrisPass" },
+    { "username": "ava_smith", "password": "SunnyDay!44" },
+    { "username": "liam_johnson", "password": "Johnson123" },
+    { "username": "isabella_martin", "password": "Mart1n@432" },
+    { "username": "ethan_miller", "password": "BlueSky456" },
+    { "username": "mia_wilson", "password": "Wilson#789" },
+    { "username": "noah_thompson", "password": "Thompson22" },
+    { "username": "olivia_jones", "password": "HappyDay123" },
+    { "username": "liam_brown", "password": "Brownie$567" },
+    { "username": "emma_davis", "password": "D@visPass" },
+    { "username": "oliver_johnson", "password": "Johnson@2023" },
+    { "username": "ava_jackson", "password": "SweetPea789" },
+    { "username": "william_martin", "password": "M@rtin456" },
+    { "username": "sophia_wilson", "password": "Wilson22" },
+    { "username": "jackson_anderson", "password": "Anderson#123" },
+    { "username": "emma_smith", "password": "Sm1thP@ss" }
 ]

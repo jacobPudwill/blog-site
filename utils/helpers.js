@@ -7,6 +7,13 @@ module.exports = {
         return [month, day, year].join('/');
     },
 
+    noComments: (comments) => {
+        if (comments.length === 0) {
+            return true;
+        }
+        return false;
+    },
+
     newComment: (logged_in, post_user_id, user_id) => {
         if (logged_in && post_user_id != user_id) {
             return true;

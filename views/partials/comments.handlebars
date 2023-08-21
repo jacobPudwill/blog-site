@@ -1,8 +1,8 @@
 <div class="comments-section">
-    <div class="comments-header">
+    <div class="block-header">
         <h4>Comments</h4>
     </div>
-    <div class="comments">
+    <div class="block-body">
         {{#each post.comments as |comment|}}
         <div class="comment">
             <p>{{content}}</p>
@@ -10,11 +10,15 @@
         </div>
         {{/each}}
 
+        {{#if (noComments post.comments)}}
+        <p>No comments.</p>
+        {{/if}}
+
         {{#if (newComment logged_in post.user.id user_id)}}
         <form id="new-comment">
             <div class="form-group">
                 <label for="new-comment-content">Comment</label>
-                <input class="form-input" type="text" id="new-comment-content">
+                <textarea class="form-input" id="new-comment-content" cols="30" rows="5"></textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-secondary" type="submit" id="submit-comment" data-id="{{post.id}}">Submit</button>

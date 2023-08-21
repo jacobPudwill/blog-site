@@ -34,24 +34,33 @@ header nav * {
 
 header nav *:hover {
     color: var(--white);
+    cursor: pointer;
     text-decoration: none;
 }
 
-/* Login/Signup/Create Post/View Post */
-#login-title, #signup-title, #create-post-title, #edit-post-header, .comments-header {
+/* Login/Signup/Create Post/Edit Post/Comments */
+.block-header {
     background-color: var(--brown);
     color: var(--mint);
     padding: 0.25rem 1rem;
 }
 
-#login, #signup, #new-post, #edit-post, .comments {
+.block-body {
     border: 0.25rem solid var(--brown);
     border-top: 0;
     padding: 0.5rem;
 }
 
-#login-btn, #signup-btn, #create-btn, #edit-post-btn, #delete-btn, #submit-comment {
+textarea {
+    resize: vertical;
+}
+
+.btn {
     width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 /* Homepage */
@@ -106,4 +115,7 @@ header nav *:hover {
     text-decoration: none;
 }
 
-/* Post */
+/* Comments */
+.comments-section {
+    margin-bottom: 1rem;
+}
