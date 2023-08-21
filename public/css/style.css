@@ -115,6 +115,11 @@ textarea {
     text-decoration: none;
 }
 
+/* Edit Post */
+.edit-post-section {
+    margin-bottom: 1rem;
+}
+
 /* Comments */
 .comments-section {
     margin-bottom: 1rem;
