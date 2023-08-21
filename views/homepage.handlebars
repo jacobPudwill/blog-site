@@ -4,7 +4,7 @@
         <h4>
             <a href="/post/{{id}}" class="post-link">{{title}}</a>
         </h4>
-        <p>Posted by {{user.username}}</p>
+        <p>Posted by {{user.username}} on {{format_date createdAt}}</p>
     </div>
     <div class="post-content">
         {{content}}

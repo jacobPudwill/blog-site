@@ -9,6 +9,10 @@ body {
     background-color: var(--mint);
 }
 
+h2, h4, p {
+    margin-bottom: 0;
+}
+
 /* Header */
 header {
     background-color: var(--brown);
@@ -46,7 +50,7 @@ header nav *:hover {
 .block-header {
     background-color: var(--brown);
     color: var(--mint);
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 0.75rem;
 }
 
 .block-body {
@@ -77,11 +81,15 @@ textarea {
 .post-title {
     background-color: var(--brown);
     color: var(--mint);
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 .post-link {
     color: inherit;
+}
+
+.post-title p {
+    font-size: small;
 }
 
 .post-content {
@@ -117,4 +125,13 @@ textarea {
 #new-post-btn:hover {
     color: var(--white);
     text-decoration: none;
+}
+
+/* Comments */
+.comment {
+    padding: 0.5rem;
+}
+
+.comment p {
+    margin-bottom: 1rem;
 }

@@ -1,7 +1,7 @@
 <div class="post">
     <div class="display-flex justify-space-between align-center post-title">
         <h4>{{post.title}}</h4>
-        <p>Posted by {{post.user.username}}</p>
+        <p class="posted-by">Posted by {{post.user.username}} on {{format_date post.createdAt}}</p>
     </div>
     <div class="post-content">
         {{post.content}}
