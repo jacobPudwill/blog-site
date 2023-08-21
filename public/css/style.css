@@ -9,7 +9,7 @@ body {
     background-color: var(--mint);
 }
 
-h2, h4, p {
+h2, h4, h5, p {
     margin-bottom: 0;
 }
 
@@ -100,7 +100,7 @@ textarea {
 .dashboard-post {
     background-color: var(--grey);
     color: var(--white);
-    padding: 0.25rem 0.5rem;
+    padding: 0.75rem;
     margin-bottom: 0.5rem;
     border-radius: 5px;
 }
