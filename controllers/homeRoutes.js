@@ -24,6 +24,38 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/post/:id', async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'username']
+                },
+                {
+                    model: Comment,
+                    include: [
+                        {
+                            model: User, 
+                            attributes: ['username']
+                        }
+                    ]
+                }
+            ]
+        });
+
+        const post = postData.get({ plain: true });
+
+        res.render('post', {
+            post,
+            logged_in: req.session.logged_in,
+            user_id: req.session.user_id
+        });
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
 router.get('/dashboard', withAuth, async (req, res) => {
     const postData = await Post.findAll({
         where: {

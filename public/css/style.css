@@ -37,20 +37,20 @@ header nav *:hover {
     text-decoration: none;
 }
 
-/* Login/Signup/Create Post */
-#login-title, #signup-title, #create-post-title, #edit-post-header {
+/* Login/Signup/Create Post/View Post */
+#login-title, #signup-title, #create-post-title, #edit-post-header, .comments-header {
     background-color: var(--brown);
     color: var(--mint);
     padding: 0.25rem 1rem;
 }
 
-#login, #signup, #new-post, #edit-post {
+#login, #signup, #new-post, #edit-post, .comments {
     border: 0.25rem solid var(--brown);
     border-top: 0;
     padding: 0.5rem;
 }
 
-#login-btn, #signup-btn, #create-btn, #edit-post-btn, #delete-btn {
+#login-btn, #signup-btn, #create-btn, #edit-post-btn, #delete-btn, #submit-comment {
     width: 100%;
 }
 
@@ -65,6 +65,10 @@ header nav *:hover {
     background-color: var(--brown);
     color: var(--mint);
     padding: 0.25rem;
+}
+
+.post-link {
+    color: inherit;
 }
 
 .post-content {
@@ -101,3 +105,5 @@ header nav *:hover {
     color: var(--white);
     text-decoration: none;
 }
+
+/* Post */

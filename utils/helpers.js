@@ -5,5 +5,12 @@ module.exports = {
         const year = '' + date.getFullYear();
 
         return [month, day, year].join('/');
+    },
+
+    newComment: (logged_in, post_user_id, user_id) => {
+        if (logged_in && post_user_id != user_id) {
+            return true;
+        }
+        return false;
     }
-}
+};
