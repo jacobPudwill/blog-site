@@ -39,6 +39,10 @@ header nav *:hover {
 }
 
 /* Login/Signup/Create Post/Edit Post/Comments */
+.section {
+    margin-bottom: 1rem;
+}
+
 .block-header {
     background-color: var(--brown);
     color: var(--mint);
@@ -113,14 +117,4 @@ textarea {
 #new-post-btn:hover {
     color: var(--white);
     text-decoration: none;
-}
-
-/* Edit Post */
-.edit-post-section {
-    margin-bottom: 1rem;
-}
-
-/* Comments */
-.comments-section {
-    margin-bottom: 1rem;
 }
