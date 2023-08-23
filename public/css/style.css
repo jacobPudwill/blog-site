@@ -80,12 +80,17 @@ textarea {
 
 .post-title {
     background-color: var(--brown);
-    color: var(--mint);
+    color: var(--grey);
     padding: 0.5rem;
 }
 
 .post-link {
     color: inherit;
+}
+
+.post-link:hover{
+    color: var(--mint);
+    text-decoration: none;
 }
 
 .post-title p {

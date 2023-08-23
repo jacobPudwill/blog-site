@@ -18,5 +18,5 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 ![Screenshot of edit post page.](./screenshots/edit-post-screenshot.png)
 ![Screenshot of new post on the homepage.](./screenshots/homepage-post-screenshot.png)
 
-# Link to Deployed Application
+## Link to Deployed Application
 
