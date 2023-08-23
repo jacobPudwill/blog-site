@@ -20,3 +20,4 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 
 ## Link to Deployed Application
 
+https://peaceful-harbor-31493-0efbfc7e5ff8.herokuapp.com/
